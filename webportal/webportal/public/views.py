@@ -81,3 +81,8 @@ def joy():
     """About page."""
 
     return render_template("public/joy.html", )
+@blueprint.route("/calculate/")
+def calculate():
+    """About page."""
+
+    return render_template("public/calculate.html")
