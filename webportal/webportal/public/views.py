@@ -80,4 +80,10 @@ def about():
 def calculate():
     """calculate page."""
 
-    return render_template("public/joy.html", )
+    return render_template("public/calculate.html", )
+
+@blueprint.route("/joy/")
+def joy():
+    """About page."""
+    # form = LoginForm(request.form)
+    return render_template("public/joy.html")
