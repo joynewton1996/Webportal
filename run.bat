@@ -1,1 +1,2 @@
-gunicorn manager:app -b 0.0.0.0:5000 -w 4
+set FLASK_APP=manager.py
+python manager.py
