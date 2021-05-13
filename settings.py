@@ -8,14 +8,18 @@ environment variables.
 """
 from environs import Env
 from dotenv import load_dotenv
-load_dotenv(dotenv_path='config/.env')
-
+# load_dotenv(dotenv_path='config/.env')
+from pathlib import Path
+config_path = Path(__file__).parent / 'config/.env'
 env = Env()
-env.read_env(path='config/.env')
+env.read_env(path=config_path)
+
+
 
 ENV = env.str("FLASK_ENV", default="development")
 DEBUG = ENV == "development"
 SQLALCHEMY_DATABASE_URI = env.str("DATABASE_URL")
+print(SQLALCHEMY_DATABASE_URI)
 SECRET_KEY = env.str("SECRET_KEY")
 SEND_FILE_MAX_AGE_DEFAULT = env.int("SEND_FILE_MAX_AGE_DEFAULT")
 BCRYPT_LOG_ROUNDS = env.int("BCRYPT_LOG_ROUNDS", default=13)
