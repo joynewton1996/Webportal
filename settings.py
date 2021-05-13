@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path='config/.env')
 
 env = Env()
-env.read_env()
+env.read_env(path='config/.env')
 
 ENV = env.str("FLASK_ENV", default="development")
 DEBUG = ENV == "development"
