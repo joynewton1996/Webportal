@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>my login</title>
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block content %}
+
 <form>
     <input type="text" name="fist_name" placeholder="first_name" >
     <input type="text" name="last_name" placeholder="last_name">
@@ -13,5 +10,5 @@
     others: <input type="radio" name="gender" value="others ">
     <button type="submit" name="sumbit" >submit</button>
 </form>
-</body>
-</html>
+
+{% endblock %}
