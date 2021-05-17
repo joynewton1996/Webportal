@@ -75,3 +75,12 @@ def about():
     """About page."""
     form = LoginForm(request.form)
     return render_template("public/about.html", form=form)
+
+@blueprint.route("/calculate/")
+def calculate():
+    result = request.args.get("gender")
+    print(result)
+    if result== "male":
+        return render_template("public/male.html")
+
+    return render_template("public/home.html")
