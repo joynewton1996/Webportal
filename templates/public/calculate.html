@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form>
+    <input type="text" name="first_name" placeholder="Write your first name...">
+    <input type="text" name="last_name" placeholder="Write your lastname...">
+    male: <input type="radio" name="gender" value="male">
+    female: <input type="radio" name="gender" value="female">
+    others: <input type="radio" name="gender" value="others">
+    <button type="submit" name="submit"> Submit</button>
+</form>
+{% endblock %}
