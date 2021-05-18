@@ -75,3 +75,9 @@ def about():
     """About page."""
     form = LoginForm(request.form)
     return render_template("public/about.html", form=form)
+
+
+@blueprint.route("/calculate/")
+def calculate():
+    """Claculate Page"""
+    return render_template("public/calculate.html")
