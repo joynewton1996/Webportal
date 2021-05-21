@@ -81,3 +81,8 @@ def about():
 def calculate():
     """Claculate Page"""
     return render_template("public/calculate.html")
+
+@blueprint.route("/login/")
+def login():
+    """Employee login Page"""
+    return render_template("public/employee_login.html")
