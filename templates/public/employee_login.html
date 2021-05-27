@@ -1,46 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>emplyee_login</title>
-</head>
-<style>
-  form {
-    width: auto;
-    height: auto;
-}
- .mydiv {
-   text-align: center;
- }
+{% extends "layout.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
 
+<div>
+    <form>
+        <div class="form-group" style="width:50%; margin:10px auto; outline: 1px ">
+            <label for="firstname" style="width:200px;border 10px ;">First Name</label>
+            <input type="text" id="firstname" placeholder="Your First Name">
+        </div>
 
-</style>
-<body>
-<form>
-    <div class="mydiv">
+        <div class="form-group" style="width:50%; margin:10px auto;">
+            <label for="password" style="width:200px;">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
 
-        <h1>Login</h1>
-
-
-
-        <h2>First name <input type="text" name="Your First Name" placeholder=" Your first name"></h2>
-        <h2>Password <input type="password" name="Password" placeholder="Password"></h2>
-        <h2>Gender <select name="Gender">
-            <option value="">select the gender</option>
-            <option value="male">male</option>
-            <option value="female">female</option>
-            <option value="others">others</option>
+        <div class="form-group" style="width:50%; margin:10px auto;">
+            <label for="gender" style="width:200px">Select your Gender</label>
+            <select name="gender" id="gender" style="width: 200px;">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female"> Female</option>
+                <option value="others">Others</option>
             </select>
-        </h2>
+        </div>
+        <div class="form-group" style="width: 20%; margin:10px auto; ">
+            <button type="submit" style="width:200px" ;>Submit
+            </button>
+        </div>
 
+    </form>
+</div>
 
-        <h2>
-
-        <button type="submit" name="submit">submit</button></h2>
-    </div>
-
-
-</form>
-
-</body>
-</html>
+{% endblock %}

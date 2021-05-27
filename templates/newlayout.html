@@ -14,7 +14,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-<link rel="stylesheet" href="C:\Users\Joy's\Scripts\Webportal\static\css\employe_style.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ static_url_for('static', filename='css/bootstrap.min.css') }}"
+/>
 <body>
 <main role="main">
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
