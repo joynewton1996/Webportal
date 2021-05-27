@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+
+<div>
+    <form>
+        <div class="form-group" style="width:50%; margin:10px auto; outline: 1px ">
+            <label for="firstname" style="width:200px;border 10px ;">First Name</label>
+            <input type="text" id="firstname" placeholder="Your First Name">
+        </div>
+
+        <div class="form-group" style="width:50%; margin:10px auto;">
+            <label for="password" style="width:200px;">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="form-group" style="width:50%; margin:10px auto;">
+            <label for="gender" style="width:200px">Select your Gender</label>
+            <select name="gender" id="gender" style="width: 200px;">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female"> Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 20%; margin:10px auto; ">
+            <button type="submit" style="width:200px" ;>Submit
+            </button>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}
