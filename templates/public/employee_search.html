@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<div>
+    <label> Employee Directory </label>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="containers">
+    <form>
+        <div style="width:50%; margin:20px auto; outline: 1px ">
+            <input type="search" style="width:400px;border 10px; height: 50px;" name="search" id="search" placeholder="search">
+            <button type="submit" name="Submit" style="width:200px; height: 50px; "> Sumbit</button>
+
+        </div>
+        <div class="row align-items-end" style="width: centre; margin: 20px; ">
+            <table class="table table-bordered table-success table-striped ">
+                <thead>
+                <tr>
+                    <th scope="col">Emp_id</th>
+                    <th scope="col">Emp_name</th>
+                    <th scope="col">Depatment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                    <td>Value1</td>
+                    <td>Value2</td>
+                    <td>Value3</td>
+                </tr>
+                <tr>
+                    <td>Value4</td>
+                    <td>Value5</td>
+                    <td>Value6</td>
+                </tr>
+                <tr>
+                    <td>Value7</td>
+                    <td>Value8</td>
+                    <td>Value9</td>
+                </tr>
+                <tr>
+
+                    <td>Value10</td>
+                    <td>Value11</td>
+                    <td>Value12</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </form>
+</div>
+
+
+{% endblock %}
