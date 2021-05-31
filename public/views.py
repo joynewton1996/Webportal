@@ -82,7 +82,13 @@ def calculate():
     """Claculate Page"""
     return render_template("public/calculate.html")
 
-@blueprint.route("/login/")
+@blueprint.route("/employee_login/")
 def login():
     """Employee login Page"""
     return render_template("public/employee_login.html")
+
+@blueprint.route("/employee_register/")
+def employee_register():
+    """Employee Register page"""
+    return render_template("public/employee_register.html")
+
