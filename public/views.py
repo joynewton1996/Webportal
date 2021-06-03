@@ -16,6 +16,8 @@ from public.forms import LoginForm
 from user import RegisterForm
 from user import User
 from utils import flash_errors
+from employee import views
+
 
 blueprint = Blueprint("public", __name__, static_folder="../static")
 
@@ -82,13 +84,5 @@ def calculate():
     """Claculate Page"""
     return render_template("public/calculate.html")
 
-@blueprint.route("/employee_login/")
-def login():
-    """Employee login Page"""
-    return render_template("public/employee_login.html")
 
-@blueprint.route("/employee_register/")
-def employee_register():
-    """Employee Register page"""
-    return render_template("public/employee_register.html")
 

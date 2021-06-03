@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 import commands
 import user
 import public
+import employee
 from extensions import (
     bcrypt,
     cache,
@@ -54,6 +55,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
     app.register_blueprint(user.views.blueprint)
+    app.register_blueprint(employee.views.blueprint)
     return None
 
 
